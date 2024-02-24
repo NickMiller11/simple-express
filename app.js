@@ -4,6 +4,8 @@ const port = 3000;
 
 app.use(express.static('public'));
 
-console.log('Making a change');
+app.get("/", (req, res) => {
+  res.send("Hello Word");
+});
 
 app.listen(port, () => console.log('Running my sweet code!'));
