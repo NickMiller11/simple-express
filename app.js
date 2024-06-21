@@ -12,4 +12,8 @@ app.get("/about", (req, res) => {
   res.send("About Me");
 })
 
+app.get("/now", (req, res) => {
+  res.send("Giving a demo, hope it goes ok")
+})
+
 app.listen(port, () => console.log('Running my sweet code!'));
